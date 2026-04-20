@@ -47,3 +47,6 @@ class TestDiv:
     def test_div_by_zero_raises(self):
         with pytest.raises(ValueError):
             div(5, 0)
+    def test_div_by_minus_raises(self):
+        with pytest.raises(ValueError):
+            div(-5, 0)
